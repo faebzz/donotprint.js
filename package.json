@@ -2,9 +2,11 @@
   "name": "donotprint.js",
   "version": "1.0.0",
   "description": "donotprint.js",
-  "main": "src\\donotprint.js",
+  "main": "src/donotprint.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs src/donotprint.js -c -m --mangle-props -o src/donotprint.min.js",
+    "publish-patch": "npm version patch && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/faebzz/donotprint.js/issues"
   },
-  "homepage": "https://github.com/faebzz/donotprint.js#readme"
+  "homepage": "https://github.com/faebzz/donotprint.js#readme",
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
 }
