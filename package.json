@@ -1,0 +1,19 @@
+{
+  "name": "donotprint.js",
+  "version": "1.0.0",
+  "description": "donotprint.js",
+  "main": "src\\donotprint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faebzz/donotprint.js.git"
+  },
+  "author": "Fabian Schaper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faebzz/donotprint.js/issues"
+  },
+  "homepage": "https://github.com/faebzz/donotprint.js#readme"
+}
